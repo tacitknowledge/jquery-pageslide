@@ -44,7 +44,25 @@ when opening pageslide programmatically (e.g. <code>\$.pageslide({ href:
 Setup
 -----
 
-In the HEAD tag:
+### CommonJS / AMD
+
+```bash
+npm i jquery-pageslide --save
+```
+
+
+```js
+// CommonJS
+var jQuery = require('jquery');
+require('jquery-pageslide')(jQuery);
+
+// AMD
+define(['jquery', 'jquery-pageslide'], function (jQuery, pageslide) {
+  pageslide(jQuery)
+})
+```
+
+### In the HEAD tag:
 
 Ideally, near the bottom of the page.
 

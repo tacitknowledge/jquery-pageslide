@@ -1,0 +1,26 @@
+{
+  "name": "jquery-pageslide",
+  "version": "2.0.1",
+  "description": "jQuery Javascript plugin which slides a webpage over to reveal an additional interaction pane.",
+  "main": "jquery.pageslide.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tacitknowledge/jquery-pageslide.git"
+  },
+  "keywords": [
+    "jquery",
+    "jquery-plugin"
+  ],
+  "author": "Nick Messing <dot.nick.dot.messing@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tacitknowledge/jquery-pageslide/issues"
+  },
+  "homepage": "https://github.com/tacitknowledge/jquery-pageslide#readme"
+}

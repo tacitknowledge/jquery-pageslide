@@ -1,15 +1,27 @@
 /*
  * jQuery pageSlide
- * Version 2.0
- * http://srobbin.com/jquery-pageslide/
+ * Version 2.0.1
+ * https://github.com/tacitknowledge/jquery-pageslide
  *
- * jQuery Javascript plugin which slides a webpage over to reveal an additional interaction pane.
+ *
+ *
  *
  * Copyright (c) 2011 Scott Robbin (srobbin.com)
+ * Modified by Tacit Knowledge for CommonJS and AMD integration 2015
  * Dual licensed under the MIT and GPL licenses.
 */
 
-;(function($){
+(function(factory){
+    if (typeof define === 'function' && define.amd) {
+        define(function () {
+            return factory;
+        });
+    } else if (typeof module === 'object' && typeof module.exports === 'object') {
+        exports = factory;
+    } else {
+        factory(jQuery);
+    }
+})(function($){
     // Convenience vars for accessing elements
     var $body = $('body'),
         $pageslide = $('#pageslide');
@@ -199,4 +211,4 @@
 	    }
 	});
 	
-})(jQuery);
+});
