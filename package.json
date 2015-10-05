@@ -1,6 +1,6 @@
 {
   "name": "jquery-pageslide",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "jQuery Javascript plugin which slides a webpage over to reveal an additional interaction pane.",
   "main": "jquery.pageslide.js",
   "directories": {

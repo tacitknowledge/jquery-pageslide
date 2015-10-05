@@ -22,6 +22,10 @@
         factory(jQuery);
     }
 })(function($){
+    // Not inintializing second time
+    if ($.fn.pageslide) {
+        return;
+    }
     // Convenience vars for accessing elements
     var $body = $('body'),
         $pageslide = $('#pageslide');
@@ -33,7 +37,7 @@
     if( $pageslide.length == 0 ) {
          $pageslide = $('<div />').attr( 'id', 'pageslide' )
                                   .css( 'display', 'none' )
-                                  .appendTo( $('body') );
+                                  .appendTo( $body );
     }
     
     /*
